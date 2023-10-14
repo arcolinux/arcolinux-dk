@@ -51,11 +51,11 @@ volume-max = #bf616a
 
 ################################################################################
 ################################################################################
-############                         MAINBAR-I3                     ############
+############                         MAINBAR-DK                     ############
 ################################################################################
 ################################################################################
 
-[bar/mainbar-i3]
+[bar/mainbar-dk]
 ;https://github.com/jaagr/polybar/wiki/Configuration
 
 monitor = ${env:MONITOR}
@@ -100,7 +100,7 @@ font-2 = "FontAwesome:size=10;0"
 #font-4 = "Noto Sans:size=14;0"
 
 modules-left = rofi break changebackground break firefox discord telegram mintstick screenshot gsimplecal insync simplescreenrecorder vivaldi
-modules-center = i3
+modules-center =
 modules-right = date break
 
 ;dim-value = 1.0
@@ -144,11 +144,11 @@ cursor-scroll =
 
 ################################################################################
 ################################################################################
-############                         MAINBAR-I3-EXTRA               ############
+############                         MAINBAR-DK-EXTRA               ############
 ################################################################################
 ################################################################################
 
-[bar/mainbar-i3-extra]
+[bar/mainbar-dk-extra]
 ;https://github.com/jaagr/polybar/wiki/Configuration
 
 monitor = ${env:MONITOR}
@@ -239,11 +239,11 @@ cursor-scroll =
 
 ################################################################################
 ################################################################################
-############                       MODULE I3                        ############
+############                       MODULE DK                        ############
 ################################################################################
 ################################################################################
 
-[module/i3]
+[module/dk]
 ;https://github.com/jaagr/polybar/wiki/Module:-i3
 type = internal/i3
 
@@ -377,7 +377,7 @@ click-right = alacritty
 
 [module/arch-updates]
 type = custom/script
-exec = ~/.config/i3/scripts/check-arch-updates.sh
+exec = ~/.config/dk/scripts/check-arch-updates.sh
 interval = 1000
 label = Arch: %output%
 format-foreground = ${colors.foreground}
@@ -511,8 +511,8 @@ content = CB
 content-padding = 1%
 content-background = ${colors.background}
 content-foreground = ${colors.foreground}
-click-left = ~/.config/i3/scripts/wal.sh
-click-right =  ~/.config/i3/scripts/wal.sh
+click-left = ~/.config/dk/scripts/wal.sh
+click-right =  ~/.config/dk/scripts/wal.sh
 
 ################################################################################
 
@@ -1220,7 +1220,7 @@ content = 
 content-padding = 1%
 content-background = ${colors.background}
 content-foreground = ${colors.foreground}
-click-left = exec rofi -no-config -no-lazy-grab -show drun -modi drun -theme ~/.config/i3/polybar/scripts/rofi/launcher2.rasi
+click-left = exec rofi -no-config -no-lazy-grab -show drun -modi drun -theme ~/.config/dk/polybar/scripts/rofi/launcher2.rasi
 ;click-right = exec rofi -theme fancy -show drun -show-icons -lines 6 -columns 4
 click-right = exec xfce4-appfinder
 
@@ -1480,8 +1480,8 @@ content = PW
 content-padding = 1%
 content-background = ${color.background}
 content-foreground = ${color.foreground}
-click-left = ~/.config/i3/scripts/wal.sh
-click-right = ~/.config/i3/scripts/wal.sh
+click-left = ~/.config/dk/scripts/wal.sh
+click-right = ~/.config/dk/scripts/wal.sh
 ;format-underline = #3EC13F
 format-foreground = ${color.foreground}
 format-background = ${color.background}

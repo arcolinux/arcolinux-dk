@@ -18,14 +18,14 @@ count=$(xrandr --query | grep " connected" | cut -d" " -f1 | wc -l)
 
 case $desktop in
 
-    i3|/usr/share/xsessions/i3)
+    dk|/usr/share/xsessions/dk)
     if type "xrandr" > /dev/null; then
       for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-        MONITOR=$m polybar --reload mainbar-i3 -c ~/.config/i3/polybar/config &
-        MONITOR=$m polybar --reload mainbar-i3-extra -c ~/.config/i3/polybar/config &
+        MONITOR=$m polybar --reload mainbar-dk -c ~/.config/dk/polybar/config &
+        MONITOR=$m polybar --reload mainbar-dk-extra -c ~/.config/dk/polybar/config &
       done
     else
-    polybar --reload mainbar-i3 -c ~/.config/i3/polybar/config &
-    polybar --reload mainbar-i3-extra -c ~/.config/i3/polybar/config &
+    polybar --reload mainbar-dk -c ~/.config/dk/polybar/config &
+    polybar --reload mainbar-dk-extra -c ~/.config/dk/polybar/config &
     fi
 esac
