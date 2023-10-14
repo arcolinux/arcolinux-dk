@@ -1034,7 +1034,7 @@ type = custom/text
 content-foreground = ${colors.foreground}
 content-background =  ${colors.background}
 content-padding = 1
-content = 虜
+content = 󰀚
 click-left = mintstick -m iso &
 ;; click-right = xfce4-screenshooter &
 click-right = killall mintstick.py &
@@ -1146,7 +1146,7 @@ format-background = ${colors.background}
 
 [module/powermenu]
 type = custom/text
-content = "  襤  "
+content = Exit
 content-foreground = ${colors.foreground}
 content-background = ${colors.background}
 click-left = /usr/bin/archlinux-logout
@@ -1215,8 +1215,7 @@ format-underline = #62FF00
 
 [module/rofi]
 type = custom/text
-;content =  
-content = 
+content = Menu
 content-padding = 1%
 content-background = ${colors.background}
 content-foreground = ${colors.foreground}
@@ -1233,7 +1232,7 @@ content-background = ${colors.background}
 ;content-overline = ${colors.background}
 ;content-underline = ${colors.background}
 content-padding = 1
-content = ﬆ
+content = 
 click-left = flameshot gui &
 ;; click-right = xfce4-screenshooter &
 click-right = gnome-screenshot -i &
@@ -1429,7 +1428,7 @@ click-left = variety --selector
 
 [module/vivaldi]
 type = custom/text
-content = 勇
+content = 
 content-padding = 1
 ;content-margin = 1
 content-foreground = ${colors.foreground}
