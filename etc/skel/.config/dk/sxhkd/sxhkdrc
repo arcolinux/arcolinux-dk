@@ -415,7 +415,7 @@ alt + p
 
 # terminal
 alt + shift + Return
-	st
+	alacritty
 
 # screenshot and selection capture
 {_,alt + }@Print
@@ -460,20 +460,28 @@ super + shift + q
 alt + {space,Tab}
     dkcmd win {swap,cycle}
 
-# close window, swap tiled window in/out of master, cycle tiled windows in place
-alt + {q,space,Tab}
-	dkcmd win {kill,swap,cycle}
+# swap tiled window in/out of master, cycle tiled windows in place
+#alt + space
+#	dkcmd win swap
+
+# swap tiled window in/out of master, cycle tiled windows in place
+super + Tab
+    dkcmd win cycle
+
+# swap tiled window in/out of master, cycle tiled windows in place
+super + shift + Tab
+    dkcmd win cycle
 
 # toggle fullscreen
 super + f
 	dkcmd win full
 
 # toggle floating or sticky
-alt + shift + {space,s}
+ctrl + shift + {space,s}
 	dkcmd win {float,stick}
 
 # move window, signed (+/-) for relative changes
-alt + shift + {h,j,k,l}
+ctrl + shift + {h,j,k,l}
 	dkcmd win resize {x=-20,y=+20,y=-20,x=+20}
 
 # resize window, signed (+/-) for relative changes
@@ -498,7 +506,7 @@ alt + {_,shift + ,ctrl + }{comma,period,backslash}
 	dkcmd mon {view,send,follow} {prev,next,last}
 
 # change active workspace layout
-alt + {t,r,m,g,s,w,f,u}
+ctrl + shift + {t,r,m,g,s,w,f,u}
 	dkcmd set layout {tile,rtile,mono,grid,spiral,dwindle,none,tstack}
 
 # change number of windows in master or first stack
