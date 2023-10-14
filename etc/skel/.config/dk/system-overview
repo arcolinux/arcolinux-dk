@@ -143,7 +143,7 @@ ${color1}[S]+[Space]${alignr}${color2}Change Layout${color}
 ${color1}[Ctrl]+[Shift]+Esc${alignr}${color2}Task Manager${color}
 ${color1}[Ctrl]+[Alt]+U${alignr}${color2}Volume Control${color}
 ${color1}[PrtSc]${alignr}${color2}Screenshot${color}
-${color1}[S]+[Shift]+R${alignr}${color2}Restart Bspwm${color}
+${color1}[S]+[Shift]+R${alignr}${color2}Restart Dk${color}
 ${color1}${hr}${color}
 ${color1}[S]+[Shift]+Q${alignr}${color2}Stop application${color}
 ${color1}[S]+x${alignr}${color2}Exit${color}
