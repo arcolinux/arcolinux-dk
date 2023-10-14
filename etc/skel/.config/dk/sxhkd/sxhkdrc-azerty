@@ -70,10 +70,6 @@ super + w
 super + c
     conky-toggle
 
-#Htop
-super + h
-    urxvt 'htop task manager' -e htop
-
 #archlinux-logout
 super + x
     archlinux-logout
@@ -126,7 +122,7 @@ super + shift + d
 
 #rofi
 super + d
-    ~/.config/bspwm/launcher/launcher.sh
+    ~/.config/dk/launcher/launcher.sh
 
 #reload sxhkd:
 super + shift + s
@@ -419,7 +415,7 @@ alt + p
 
 # terminal
 alt + shift + Return
-	st
+	alacritty
 
 # screenshot and selection capture
 {_,alt + }@Print
@@ -437,18 +433,12 @@ alt + shift + Return
 alt + {Insert,Delete}
 	pamixer {-i,-d} 2
 
-# reload sxhkd
-alt + shift + x
-	pkill -USR1 -x sxhkd
-
-
-
 # quit dk
-alt + shift + q
-	dkcmd exit
+#alt + shift + q
+#	dkcmd exit
 
 # reload dkrc
-alt + shift + r
+super + shift + r
 	$HOME/.config/dk/dkrc
 
 # restart dk
@@ -459,20 +449,39 @@ alt + ctrl + shift + r
 alt + {j,k}
 	dkcmd win focus {next,prev}
 
-# close window, swap tiled window in/out of master, cycle tiled windows in place
-alt + {q,space,Tab}
-	dkcmd win {kill,swap,cycle}
+# close window
+super + q
+    dkcmd win kill
 
-# toggle fullscreen and fake fullscreen (enable manipulating fullscreen window)
-{_,alt + }F11
-	dkcmd win {full,fakefull}
+super + shift + q
+    dkcmd win kill
+
+# swap tiled window in/out of master, cycle tiled windows in place
+alt + {space,Tab}
+    dkcmd win {swap,cycle}
+
+# swap tiled window in/out of master, cycle tiled windows in place
+#alt + space
+#	dkcmd win swap
+
+# swap tiled window in/out of master, cycle tiled windows in place
+super + Tab
+    dkcmd win cycle
+
+# swap tiled window in/out of master, cycle tiled windows in place
+super + shift + Tab
+    dkcmd win cycle
+
+# toggle fullscreen
+super + f
+	dkcmd win full
 
 # toggle floating or sticky
-alt + shift + {space,s}
+ctrl + shift + {space,s}
 	dkcmd win {float,stick}
 
 # move window, signed (+/-) for relative changes
-alt + shift + {h,j,k,l}
+ctrl + shift + {h,j,k,l}
 	dkcmd win resize {x=-20,y=+20,y=-20,x=+20}
 
 # resize window, signed (+/-) for relative changes
@@ -483,9 +492,16 @@ alt + ctrl + {h,j,k,l}
 alt + {Up,Down}
 	dkcmd win mvstack {up,down}
 
+#Belgian azerty
+tag_keys=(  )
+
+#French azerty
+#tag_keys=( ampersand eacute quotedbl apostrophe parenleft minus egrave underscore ccedilla agrave )
+
+
 # view, send, or follow to a workspace (by number)
-alt + {_,shift + ,ctrl + }{1-9,0}
-	dkcmd ws {view,send,follow} {1-9,10}
+alt + {_,shift + ,ctrl + }{ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
+	dkcmd ws {view,send,follow} {1,2,3,4,5,6,7,8,9,10}
 
 # view, send, or follow to the next, previous, last active,
 # next non-empty, or prev non-empty workspace
@@ -497,7 +513,7 @@ alt + {_,shift + ,ctrl + }{comma,period,backslash}
 	dkcmd mon {view,send,follow} {prev,next,last}
 
 # change active workspace layout
-alt + {t,r,m,g,s,w,f,u}
+ctrl + shift + {t,r,m,g,s,w,f,u}
 	dkcmd set layout {tile,rtile,mono,grid,spiral,dwindle,none,tstack}
 
 # change number of windows in master or first stack
