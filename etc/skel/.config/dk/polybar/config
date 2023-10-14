@@ -627,7 +627,7 @@ label = %date% - %time%
 
 [module/discord]
 type = custom/text
-content ="ﱲ"
+content =""
 content-padding = 1
 ;content-margin = 1
 content-foreground = ${colors.foreground}
