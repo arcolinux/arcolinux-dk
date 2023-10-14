@@ -129,7 +129,7 @@ fi
 	# rule class, instance, and title regexes (*ALWAYS* CASE INSENSITIVE)
 
 	# open window(s) on a specific workspace (assigned monitor)
-	dkcmd rule class="^gimp$" ws=2
+	#dkcmd rule class="^gimp$" ws=2
 
 	# open window(s) on a monitor by number or name (active workspace on monitor)
 	dkcmd rule class="^chromium$" mon="HDMI-A-0"
@@ -140,7 +140,7 @@ fi
 	dkcmd rule class="^mpv$" instance="^albumart$" float=true ignore=true callback=albumart bw=0
 
 	# open window(s) in a floating state
-	dkcmd rule class="^(pavucontrol|transmission-gtk|steam|lxappearance)$" float=true
+	dkcmd rule class="^(steam|lxappearance)$" float=true
 
 	# open window(s) with a specific geometry and coordinates (floating only!)
 	dkcmd rule class="^google-chrome$" title="^open files$" float=true w=1280 h=720
@@ -149,7 +149,7 @@ fi
 	dkcmd rule class="^stickyterm$" stick=true float=true w=1280 h=720
 
 	# focus window and workspace on opening
-	dkcmd rule class="^firefox$" ws=1 focus=true
+	#dkcmd rule class="^firefox$" ws=1 focus=true
 
 	# update or remove an existing rule with the same match patterns
 	dkcmd rule class="^firefox$" mon="HDMI-A-0"

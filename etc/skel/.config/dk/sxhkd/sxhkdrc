@@ -70,10 +70,6 @@ super + w
 super + c
     conky-toggle
 
-#Htop
-super + h
-    urxvt 'htop task manager' -e htop
-
 #archlinux-logout
 super + x
     archlinux-logout
@@ -126,7 +122,7 @@ super + shift + d
 
 #rofi
 super + d
-    ~/.config/bspwm/launcher/launcher.sh
+    ~/.config/dk/launcher/launcher.sh
 
 #reload sxhkd:
 super + shift + s
@@ -437,18 +433,12 @@ alt + shift + Return
 alt + {Insert,Delete}
 	pamixer {-i,-d} 2
 
-# reload sxhkd
-alt + shift + x
-	pkill -USR1 -x sxhkd
-
-
-
 # quit dk
-alt + shift + q
-	dkcmd exit
+#alt + shift + q
+#	dkcmd exit
 
 # reload dkrc
-alt + shift + r
+super + shift + r
 	$HOME/.config/dk/dkrc
 
 # restart dk
@@ -459,13 +449,24 @@ alt + ctrl + shift + r
 alt + {j,k}
 	dkcmd win focus {next,prev}
 
+# close window
+super + q
+    dkcmd win kill
+
+super + shift + q
+    dkcmd win kill
+
+# swap tiled window in/out of master, cycle tiled windows in place
+alt + {space,Tab}
+    dkcmd win {swap,cycle}
+
 # close window, swap tiled window in/out of master, cycle tiled windows in place
 alt + {q,space,Tab}
 	dkcmd win {kill,swap,cycle}
 
-# toggle fullscreen and fake fullscreen (enable manipulating fullscreen window)
-{_,alt + }F11
-	dkcmd win {full,fakefull}
+# toggle fullscreen
+super + f
+	dkcmd win full
 
 # toggle floating or sticky
 alt + shift + {space,s}
