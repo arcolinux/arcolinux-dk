@@ -1215,7 +1215,7 @@ format-underline = #62FF00
 
 [module/rofi]
 type = custom/text
-content = Menu
+content = ""
 content-padding = 1%
 content-background = ${colors.background}
 content-foreground = ${colors.foreground}
