@@ -15,17 +15,14 @@ while pgrep -u $UID -x polybar > /dev/null; do sleep 1; done
 desktop=$(echo $DESKTOP_SESSION)
 count=$(xrandr --query | grep " connected" | cut -d" " -f1 | wc -l)
 
-
 case $desktop in
 
     dk|/usr/share/xsessions/dk)
     if type "xrandr" > /dev/null; then
       for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
         MONITOR=$m polybar --reload mainbar-dk -c ~/.config/dk/polybar/config &
-        MONITOR=$m polybar --reload mainbar-dk-extra -c ~/.config/dk/polybar/config &
       done
     else
     polybar --reload mainbar-dk -c ~/.config/dk/polybar/config &
-    polybar --reload mainbar-dk-extra -c ~/.config/dk/polybar/config &
     fi
 esac

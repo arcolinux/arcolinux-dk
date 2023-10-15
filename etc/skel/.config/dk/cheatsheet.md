@@ -33,7 +33,11 @@
   Super  Shift  1 .. 0    *move container to workspace 1 .. 10*
 
 # notes
-  - ...
+  - https://www.youtube.com/@natemaia9237
+  - https://bitbucket.org/natemaia/dk/src/master/
+  - https://www.youtube.com/watch?v=SW6LKbjFJTI
+  - https://www.youtube.com/watch?v=Mv8e84wa7ow
+  - 
 
 # user githubs
   - ...
