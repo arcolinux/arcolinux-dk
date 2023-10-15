@@ -410,7 +410,7 @@ label = %date% - %time%
 
 [module/discord]
 type = custom/text
-content =""
+content ="󰊮"
 content-padding = 1
 ;content-margin = 1
 content-foreground = ${colors.foreground}
@@ -817,7 +817,7 @@ type = custom/text
 content-foreground = ${colors.foreground}
 content-background =  ${colors.background}
 content-padding = 1
-content = 󰀚
+content = 󰀥
 click-left = mintstick -m iso &
 ;; click-right = xfce4-screenshooter &
 click-right = killall mintstick.py &
