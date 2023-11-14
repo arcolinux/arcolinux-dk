@@ -139,7 +139,6 @@ ${color1}[S]+[Shift]+Enter${alignr}${color2}File Manager${color}
 ${color1}[Ctrl]+[Alt]+V${alignr}${color2}Vivaldi${color}
 ${color1}[S]+F2${alignr}${color2}Editor${color}
 ${color1}[S]+F6${alignr}${color2}Media Player${color}
-${color1}[S]+[Space]${alignr}${color2}Change Layout${color}
 ${color1}[Ctrl]+[Shift]+Esc${alignr}${color2}Task Manager${color}
 ${color1}[Ctrl]+[Alt]+U${alignr}${color2}Volume Control${color}
 ${color1}[PrtSc]${alignr}${color2}Screenshot${color}
