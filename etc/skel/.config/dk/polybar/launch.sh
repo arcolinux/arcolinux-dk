@@ -20,9 +20,9 @@ case $desktop in
     dk|/usr/share/xsessions/dk)
     if type "xrandr" > /dev/null; then
       for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-        MONITOR=$m polybar --reload mainbar-dk -c ~/.config/dk/polybar/config &
+        MONITOR=$m polybar --reload mainbar-dk -c ~/.config/dk/polybar/config.ini &
       done
     else
-    polybar --reload mainbar-dk -c ~/.config/dk/polybar/config &
+    polybar --reload mainbar-dk -c ~/.config/dk/polybar/config.ini &
     fi
 esac
