@@ -6,6 +6,11 @@
 # awesome-terminal-fonts
 # Tip : There are other interesting fonts that provide icons like nerd-fonts-complete
 # --log=error
+
+# if you see None-1-1 in your xrandr output as connected or something similar
+# remove the last line with this
+# xrandr --query | grep " connected" | cut -d" " -f1 | sed '$d' in line 27
+
 # Terminate already running bar instances
 killall -q polybar
 
