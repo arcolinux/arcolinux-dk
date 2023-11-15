@@ -504,7 +504,7 @@ alt + {Up,Down}
 super + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
     dkcmd ws view {1,2,3,4,5,6,7,8,9,10}
 
-super + shift + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
+super + shift + {1,2,3,4,5,6,7,8,9,0}
     dkcmd ws send {1,2,3,4,5,6,7,8,9,10}
 
 super + ctrl + shift + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
