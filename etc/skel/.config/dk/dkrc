@@ -1,5 +1,8 @@
 #!/bin/sh
 
+#number of workspaces
+dkcmd set numws = 10
+
 # example dkrc to show some basic command usage and error reporting
 
 # determine where to place the log file
