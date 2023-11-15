@@ -502,13 +502,13 @@ alt + {Up,Down}
 #Belgian azerty
 # view, send, or follow to a workspace (by number)
 super + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
-    dkcmd ws view {1-9,10}
+    dkcmd ws view {1,2,3,4,5,6,7,8,9,10}
 
 super + shift + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
-    dkcmd ws send {1-9,10}
+    dkcmd ws send {1,2,3,4,5,6,7,8,9,10}
 
 super + ctrl + shift + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
-    dkcmd ws follow {1-9,10}
+    dkcmd ws follow {1,2,3,4,5,6,7,8,9,10}
 
 
 #Qwerty
