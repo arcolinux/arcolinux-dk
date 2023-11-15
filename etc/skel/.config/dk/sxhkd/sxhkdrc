@@ -501,8 +501,26 @@ alt + {Up,Down}
 
 #Belgian azerty
 # view, send, or follow to a workspace (by number)
-alt + {_,shift + ,ctrl + }{1-9,0}
-	dkcmd ws {view,send,follow} {1-9,10}
+#super + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
+#    dkcmd ws view {1-9,10}
+
+#super + shift + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
+#    dkcmd ws send {1-9,10}
+
+#super + ctrl + shift + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
+#    dkcmd ws follow {1-9,10}
+
+
+#Qwerty
+# view, send, or follow to a workspace (by number)
+super + {1-9,0}
+    dkcmd ws view {1-9,10}
+
+super + shift + {1-9,0}
+    dkcmd ws send {1-9,10}
+
+super + ctrl + shift + {1-9,0}
+    dkcmd ws follow {1-9,10}
 
 # view, send, or follow to the next, previous, last active,
 # next non-empty, or prev non-empty workspace
