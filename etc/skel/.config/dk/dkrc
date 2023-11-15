@@ -129,11 +129,3 @@ dkcmd set mouse mod=alt move=button1 resize=button3
 
 # delete all rules
 # dkcmd rule remove '*'
-
-
-# (re)load sxhkd for keybinds
-if hash sxhkd >/dev/null 2>&1; then
-	pkill sxhkd
-	sxhkd -c "$HOME/.config/dk/sxhkd/sxhkdrc" &
-fi
-
